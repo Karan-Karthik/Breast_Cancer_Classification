@@ -17,12 +17,12 @@ We trained a neural network for binary classification using two hidden layers. T
 - Output layer: 1 neuron with a sigmoid activation function, mapping predictions to probabilities between 0 and 1.
 
 The model minimizes **Binary Cross-Entropy Loss (BCE)**:
-\[
+$$
 \text{BCE Loss} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \cdot \log(\hat{y}_i) + (1 - y_i) \cdot \log(1 - \hat{y}_i) \right]
-\]
+$$
 where:
-- \( y_i \): True label (0 for benign, 1 for malignant).
-- \( \hat{y}_i \): Predicted probability from the sigmoid function.
+- $ ( y_i ) $: True label (0 for benign, 1 for malignant).
+- $ ( \hat{y}_i ) $: Predicted probability from the sigmoid function.
 
 This setup ensures the model learns to predict probabilities aligned with the true labels for accurate classification.
 
